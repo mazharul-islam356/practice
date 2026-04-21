@@ -3,9 +3,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className="m-20">
-      {/* card design */}
-
+    <div className="m-20 ">
       {/* ----image */}
       {/* ----heading */}
       {/* ----description (optional) */}
@@ -14,17 +12,20 @@ const Card = () => {
 
       <div className="border border-gray-300 h-100 w-72 shadow rounded-xl">
         <Image
-          className="shadow m-4 rounded-xl"
+          className="shadow m-4 aspect-2/2 rounded-xl object-cover"
           width={250}
           height={250}
-          src="/Samsung-S24-Ultra-Titanium-Grey (1).jpg"
+          src="/clothes-laptop-bed-arrangement-high-angle_23-2149726124.avif"
           alt="product-one"
         />
         {/* card info */}
-        <div className="m-4">
+        <div className="m-4 group">
           <h2 className="text-lg font-medium ">Samsung galaxy s24 ultra</h2>
           <p className="font-bold text-2xl ">$1200</p>
-          <button className="bg-gray-800 text-white  active:bg-amber-500 px-4 py-1 rounded-sm mt-2 container mx-auto hover:bg-gray-500">
+          <button
+            disabled
+            className="bg-blue-800 text-white  active:bg-amber-500 px-4 py-1 rounded-sm mt-2 container mx-auto group-active:bg-amber-500 disabled:bg-gray-500 disabled:cursor-not-allowed"
+          >
             Add to cart
           </button>
         </div>
