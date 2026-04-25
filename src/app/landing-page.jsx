@@ -4,6 +4,7 @@ import HeroSection from "./hero-section";
 import CardSection from "./card-section";
 import FeatureCourse from "./feature-course";
 import AdSection from "./ad-section";
+import Footer from "./footer";
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
         <CardSection />
         <FeatureCourse />
         <AdSection />
+        <Footer />
       </div>
     </div>
   );
